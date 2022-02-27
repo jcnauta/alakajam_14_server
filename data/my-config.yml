@@ -1,0 +1,21 @@
+name: nakama-node-1
+data_dir: "./data/"
+
+database:
+    address:
+    - "root@cockroachdb:26257"
+
+logger:
+    stdout: false
+    level: "ERROR"
+    file: "./data/logfile.log"
+
+console:
+    port: 7351
+    username: "my_user"
+    password: "my_password"
+
+socket:
+    server_key: "vroom_shroomz"
+
+# exec /nakama/nakama --name nakama1 --database.address root@cockroachdb:26257 --logger.level DEBUG --session.token_expiry_sec 7200 --metrics.prometheus_port 9100
